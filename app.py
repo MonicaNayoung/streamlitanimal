@@ -119,7 +119,7 @@ def generate_result(history):
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=300,
+        max_tokens=1500,
         temperature=0.7
     )
     return response.choices[0].message.content.strip()
