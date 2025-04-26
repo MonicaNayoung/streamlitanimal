@@ -67,6 +67,8 @@ def next_question(answer, current):
     if current == "Q5":
         return "Q2" if answer == "yes" else "result"
     if current == "Q6":
+        return "result" if answer == "yes" else "Q7"
+    if current == "Q7":
         return "result"
     return "result"
 
